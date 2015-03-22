@@ -27,12 +27,6 @@ Inject the `MoneyFormatter` class into your methods/constructors. Or use the `Mo
 
 For information on the usage of the MoneyFormatter class, please refer to the [original repository](https://github.com/nWidart/MoneyFormatter).
 
-## Testing
-
-``` bash
-$ phpunit
-```
-
 ## Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
