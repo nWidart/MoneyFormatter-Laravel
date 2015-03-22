@@ -21,6 +21,12 @@ Add the service provider to `config/app.php`
 'Nwidart\MoneyFormatterLaravel\MoneyFormatterServiceProvider'
 ```
 
+Optional: Publish the configuration file
+
+``` bash
+$ php artisan vendor:publish --provider="Nwidart\MoneyFormatterLaravel\MoneyFormatterServiceProvider"
+```
+
 ## Usage
 
 Inject the `MoneyFormatter` class into your methods/constructors. Or use the `MoneyFormatter` Facade.
