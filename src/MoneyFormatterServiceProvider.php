@@ -16,11 +16,6 @@ class MoneyFormatterServiceProvider extends ServiceProvider
         });
     }
 
-    public function provides()
-    {
-        return ['money.formatter'];
-    }
-
     /**
      * Register the configuration file so Laravel can publish them
      * Also merges the published config file with original

@@ -6,6 +6,6 @@ class MoneyFormatter extends Facade
 {
     public static function getFacadeAccessor()
     {
-        return 'money.formatter';
+        return 'Nwidart\MoneyFormatter\MoneyFormatter';
     }
 }
