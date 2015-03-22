@@ -15,6 +15,12 @@ Via Composer
 $ composer require nwidart/money-formatter-laravel
 ```
 
+Add the service provider to `config/app.php`
+
+``` php
+'Nwidart\MoneyFormatterLaravel\MoneyFormatterServiceProvider'
+```
+
 ## Usage
 
 
