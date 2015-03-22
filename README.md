@@ -23,7 +23,9 @@ Add the service provider to `config/app.php`
 
 ## Usage
 
+Inject the `MoneyFormatter` class into your methods/constructors. Or use the `MoneyFormatter` Facade.
 
+For information on the usage of the MoneyFormatter class, please refer to the [original repository](https://github.com/nWidart/MoneyFormatter).
 
 ## Testing
 
