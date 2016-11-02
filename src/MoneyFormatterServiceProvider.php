@@ -11,7 +11,7 @@ class MoneyFormatterServiceProvider extends ServiceProvider
         $this->registerConfiguration();
         $this->registerAlias();
 
-        $this->app->singleton('Nwidart\MoneyFormatter\MoneyFormatter', function () {
+        $this->app->singleton(\Nwidart\MoneyFormatter\MoneyFormatter::class, function () {
             return new MoneyFormatter(config('money-formatter.locale', 'en_UK'));
         });
     }
@@ -33,6 +33,6 @@ class MoneyFormatterServiceProvider extends ServiceProvider
     private function registerAlias()
     {
         $aliasLoader = AliasLoader::getInstance();
-        $aliasLoader->alias('MoneyFormatter', 'Nwidart\MoneyFormatterLaravel\MoneyFormatter');
+        $aliasLoader->alias('MoneyFormatter', \Nwidart\MoneyFormatterLaravel\MoneyFormatter::class);
     }
 }
