@@ -11,7 +11,7 @@ class MoneyFormatterServiceProvider extends ServiceProvider
         $this->registerConfiguration();
         $this->registerAlias();
 
-        $this->app->bindShared('Nwidart\MoneyFormatter\MoneyFormatter', function () {
+        $this->app->singleton('Nwidart\MoneyFormatter\MoneyFormatter', function () {
             return new MoneyFormatter(config('money-formatter.locale', 'en_UK'));
         });
     }
